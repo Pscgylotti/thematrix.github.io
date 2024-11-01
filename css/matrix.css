@@ -52,7 +52,14 @@
   }
 
 }
+.intermediate-title{
 
+  background-color: #161616;
+  color:#d7d7d7;
+  font-size: 36px;
+  text-align: center;
+  line-height: 120px;
+}
 .slick-next{
   position: absolute;
   top: 50%;
