@@ -21,8 +21,30 @@
   color:#d7d7d7;
 }
 .slide p:hover{
-  overflow-y:scroll;
+  overflow-y: scroll;
   -webkit-line-clamp: 999;
+}
+.tiling-video-wrapper{
+  background-color: #313131;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tiling-video-outer{
+  width: 25%;
+}
+.video-container{
+  display: grid;
+}
+.tiling-video{
+  width: 100%;
+  margin:0;
+  padding:0;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  grid-column: 1;
+  grid-row: 1;
+  display:block;
 }
 .slide h2{
   color:#d7d7d7;

@@ -89,6 +89,107 @@ https://templatemo.com/tm-520-highway
     <!-- Add more slides as needed -->
   </div>
 
+  <div class="tiling-video-wrapper">
+    <div class="tiling-video-outer">
+      <div class="tiling-video-container">
+    <video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+      <source src="videos/0000.mp4" type="video/mp4" />
+    </video>
+  </div></div>
+  <div class="tiling-video-outer">
+    <div class="tiling-video-container">
+  <video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+    <source src="videos/0000.mp4" type="video/mp4" />
+  </video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+<div class="tiling-video-outer">
+  <div class="tiling-video-container">
+<video preload="none" poster="videos_icon/0000.png" onclick="toggleVideoPlay(this)" class="tiling-video">
+  <source src="videos/0000.mp4" type="video/mp4" />
+</video>
+</div></div>
+
+
+  </div>
+
   <footer>
     <div class="container-fluid">
       <div class="col-md-12">
@@ -253,6 +354,32 @@ https://templatemo.com/tm-520-highway
     navigator.clipboard.writeText(pt.innerHTML.replace("<span>Prompt: </span>", ""));
     info_prompt("The Prompt has been copied!");
   }
+  function toggleVideoPlay(vid){
+    if(vid.paused){
+      vid.play();
+    }else{
+      vid.pause();
+    }
+  }
+  var check_resize = function(){
+    const elements = document.querySelectorAll('.tiling-video-outer');
+    elements.forEach(function(element){
+      var current_ratio = window.innerWidth / window.innerHeight;
+      var absolute_ratio = 16.0 / 9.0
+      var k = Math.round(current_ratio /absolute_ratio * 4);
+      if(k<=0){
+        k = 1;
+      }
+      element.style.width = (100.0 / k).toString() + "%";
+    });
+  }
+  var old_func = window.onresize;
+  var new_func = function(){
+    old_func && old_func();
+    check_resize();
+  }
+  window.onresize = new_func;
+  check_resize();
 </script>
 
-</html>>
+</html>
