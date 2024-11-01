@@ -60,18 +60,16 @@ https://templatemo.com/tm-520-highway
   <div class="video-slider">
     <div class="slide">
       <h2>Video Title 1</h2>
-      <div class="prompt-wrapper">
         <video preload="none" poster="videos_icon/0000.png" onclick="setControls(this)">
           <source src="videos/0000.mp4" type="video/mp4" />
         </video>
-        <p><span>Prompt:</span> A stylish woman walks down a Tokyo street filled with warm glowing
+        <p onclick="clickToCopy(this)"><span>Prompt: </span>A stylish woman walks down a Tokyo street filled with warm glowing
           neon and animated city signage. She wears a black leather jacket, a long red dress, and black boots, and
           carries
           a black purse. She wears sunglasses and red lipstick. She walks confidently and casually. The street is damp
           and
           reflective, creating a mirror effect of the colorful lights. Many pedestrians walk about.
         </p>
-      </div>
     </div>
     <div class="slide">
       <h2>Video Title 2</h2>
@@ -209,6 +207,48 @@ https://templatemo.com/tm-520-highway
   function setControls(vid) {
     vid.controls = true;
     vid.play();
+  }
+  var prompt = function (message, style, time)
+{
+    style = (style === undefined) ? 'alert-success' : style;
+    time = (time === undefined) ? 1200 : time;
+    $('<div>')
+        .appendTo('body')
+        .addClass('alert ' + style)
+        .html(message)
+        .show()
+        .delay(time)
+        .fadeOut(300, function(){
+          //$(this).remove();
+        });
+};
+
+// 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-inf', time);
+  };
+  function clickToCopy(pt){
+    navigator.clipboard.writeText(pt.innerHTML.replace("<span>Prompt: </span>", ""));
+    info_prompt("The Prompt has been copied!");
   }
 </script>
 
