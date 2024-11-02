@@ -1,7 +1,9 @@
 .video-slider {
   width: 100%;
   margin: auto;
-  background-color: #313131;
+  background-color: #161616;
+  margin: 0 0 2em 0;
+  box-shadow: 0 1em 0 1em rgba(22, 22, 22, 1.0);
 }
 .slide {
   text-align: center;
@@ -31,9 +33,16 @@
 }
 .tiling-video-outer{
   width: 25%;
+  display:block;
 }
-.video-container{
+.tiling-video-container{
   display: grid;
+}
+.tiling-video-container:hover .tiling-prompt{
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.tiling-video-container:hover .tiling-prompt div{
+  display: block;
 }
 .tiling-video{
   width: 100%;
@@ -44,7 +53,6 @@
   overflow: clip;
   grid-column: 1;
   grid-row: 1;
-  display:block;
 }
 .slide h2{
   color:#d7d7d7;
@@ -80,7 +88,39 @@
   color:#d7d7d7;
   font-size: 36px;
   text-align: center;
-  line-height: 120px;
+  margin:2em 0 2em 0;
+  box-shadow: 0 0 0 2em rgba(22, 22, 22, 1.0);
+}
+.intermediate-title-l2{
+
+  background-color: #161616;
+  color:#d7d7d7;
+  font-size: 20px;
+  text-align: left;
+  margin:0.5em 0 0.5em 0;
+  box-shadow: 0 0 0 0.5em rgba(22, 22, 22, 1.0);
+  a{
+    color:#a94442;
+  }
+}
+.tiling-prompt{
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  background: transparent;
+  margin:0;
+  padding:0;
+  color:#c3c3c3dd;
+}
+.tiling-prompt div{
+  padding: 5% 10%;
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  overflow-y: scroll;
 }
 .slick-next{
   position: absolute;
@@ -130,9 +170,9 @@
 }
 
 .alert-inf {
-  color: #31708f;
-  background-color: #d9edf788;
-  border-color: #bce8f1;
+  color: #d7d7d7;
+  background-color: #676767aa ;
+  border-color: #444444;
 }
 
 .alert-warning {
