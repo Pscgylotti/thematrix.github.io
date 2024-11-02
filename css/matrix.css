@@ -9,7 +9,7 @@
   text-align: center;
 }
 .slide video {
-  max-width: 70%;
+  max-width: 95%;
 }
 .slide p{
   max-width: 70%;
@@ -56,13 +56,14 @@
 }
 .slide h2{
   color:#d7d7d7;
+  font-size: 24px;
 }
 .slick-prev{
   position: absolute;
   top: 50%;
   z-index: 10;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
   border: 0;
   text-indent: -9999px;
@@ -120,14 +121,13 @@
   text-align: center;
   font-size: 12px;
   line-height: 12px;
-  overflow-y: scroll;
 }
 .slick-next{
   position: absolute;
   top: 50%;
   z-index: 10;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
   border: 0;
   text-indent: -9999px;
