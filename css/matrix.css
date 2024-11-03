@@ -27,7 +27,7 @@
   -webkit-line-clamp: 999;
 }
 .tiling-video-wrapper{
-  background-color: #313131;
+  background-color: #161616;
   display: flex;
   flex-wrap: wrap;
 }
@@ -92,16 +92,17 @@
   color:#d7d7d7;
   font-size: 36px;
   text-align: center;
-  margin:2em 0 2em 0;
-  box-shadow: 0 0 0 2em rgba(22, 22, 22, 1.0);
+  margin:1em 0 1em 0;
+  box-shadow: 0 0 0 1em rgba(22, 22, 22, 1.0);
 }
 .intermediate-title-l2{
 
   background-color: #161616;
   color:#d7d7d7;
-  font-size: 20px;
+  font-size: 24px;
   text-align: left;
   margin:0.5em 0 0.5em 0;
+  padding: 0 2em;
   box-shadow: 0 0 0 0.5em rgba(22, 22, 22, 1.0);
   a{
     color:#a94442;
@@ -114,6 +115,7 @@
   font-size: 16px;
   text-align: left;
   margin:0.5em 0 0.5em 0;
+  padding: 0 2em;
   box-shadow: 0 0 0 0.5em rgba(22, 22, 22, 1.0);
   a{
     color:#a94442;
