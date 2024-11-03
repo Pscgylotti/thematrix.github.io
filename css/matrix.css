@@ -107,6 +107,18 @@
     color:#a94442;
   }
 }
+.intermediate-context{
+
+  background-color: #161616;
+  color:#d7d7d7;
+  font-size: 16px;
+  text-align: left;
+  margin:0.5em 0 0.5em 0;
+  box-shadow: 0 0 0 0.5em rgba(22, 22, 22, 1.0);
+  a{
+    color:#a94442;
+  }
+}
 .tiling-prompt{
   grid-column: 1;
   grid-row: 1;
