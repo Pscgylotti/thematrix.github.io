@@ -16,7 +16,6 @@
   max-height: 60px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   margin:auto;
   text-align: left;
@@ -265,7 +264,11 @@ canvas {
   margin: 10px 0;
 }
 
-
+.matrixico{
+  width:20px;
+  height:20px;
+  margin:2px;
+}
 
 /* Table Styling */
 .table-wrapper {
@@ -298,6 +301,8 @@ tbody .highlight {
   background-color: #333; /* Highlighted cell background */
   color: #00ff00; /* Green text for highlights */
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
