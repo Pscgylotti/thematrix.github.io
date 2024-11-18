@@ -263,3 +263,48 @@ canvas {
 .code-rain-container .content ul li {
   margin: 10px 0;
 }
+
+
+
+/* Table Styling */
+.table-wrapper {
+  margin: 20px auto;
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+table {
+  width: 100%;
+  max-width: 800px; /* Limit table width */
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: white; /* Text color */
+}
+
+thead th {
+  background-color: #444; /* Dark header background */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  padding: 8px 10px;
+  text-align: center;
+  border: 1px solid #555; /* Table border */
+}
+
+tbody .highlight {
+  background-color: #333; /* Highlighted cell background */
+  color: #00ff00; /* Green text for highlights */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
