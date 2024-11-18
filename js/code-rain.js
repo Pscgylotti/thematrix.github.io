@@ -14,7 +14,11 @@ function initCodeRain(selector, text = 'The matrix of hackers', symbol = '', spe
 
     // 动态调整画布尺寸和字体大小
     function resizeCanvas() {
-      const contentHeight = container.querySelector('.content').offsetHeight;
+      const contents = container.querySelectorAll('.content');
+      var contentHeight = 0;
+      for(var i=0; i<contents.length; i++){
+        contentHeight += contents[i].offsetHeight
+      }
       canvas.width = container.clientWidth;
       canvas.height = contentHeight + 10; // 内容高度 + 微调余量，确保代码雨结束靠近底部
 
