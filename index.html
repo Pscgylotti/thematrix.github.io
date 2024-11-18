@@ -72,7 +72,95 @@ https://templatemo.com/tm-520-highway
           <li><strong>Infinite generative capacity</strong> for endless exploration, surpassing the limits of current video models.</li>
         </ul>
         <p><strong>Curious?</strong> Read on to explore the technology powering <em>The Matrix</em> and experience the feel of a self-sustaining digital universe!</p>
-        <h1>The Matrix Gallery</h1>
+      </div>
+    </div>
+    <div class="content">
+      <h4>Comparison of Recent Generative Models for Game Simulation</h4>
+    <p>
+      <strong><em>The Matrix</em></strong> distinguishes itself as a foundation model capable of generating infinitely long videos with AAA game quality, high resolution, frame-level real-time control, and robust domain generalization. Here, * indicates concurrent work with <em>The Matrix</em>, and supervised/unsupervised refers to the video data with/without true control signal.
+    </p>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Genie</th>
+            <th>DIAMOND</th>
+            <th>MarioVGG*</th>
+            <th>GameNGen*</th>
+            <th>Oasis*</th>
+            <th>GameGen-X*</th>
+            <th>The Matrix</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Video Length</td>
+            <td>2s</td>
+            <td class="highlight">Infinite</td>
+            <td>6 Frames</td>
+            <td class="highlight">Infinite</td>
+            <td class="highlight">Infinite</td>
+            <td>4s–16s</td>
+            <td class="highlight">Infinite</td>
+          </tr>
+          <tr>
+            <td>Training Corpus</td>
+            <td>2D Games (unsupervised)</td>
+            <td>Atari, CS:GO</td>
+            <td>Mario</td>
+            <td>DOOM</td>
+            <td>Minecraft</td>
+            <td>AAA Games</td>
+            <td class="highlight">AAA Games (supervised, small)<br>Internet Videos (unsupervised, large)</td>
+          </tr>
+          <tr>
+            <td>Resolution</td>
+            <td>360p</td>
+            <td>$280×150$</td>
+            <td>$64×48$</td>
+            <td>240p</td>
+            <td class="highlight">720p</td>
+            <td class="highlight">720p</td>
+            <td class="highlight">720p</td>
+          </tr>
+          <tr>
+            <td>Control</td>
+            <td class="highlight">Frame-Level</td>
+            <td class="highlight">Frame-Level</td>
+            <td>Video-Level</td>
+            <td class="highlight">Frame-Level</td>
+            <td class="highlight">Frame-Level</td>
+            <td>Video-Level</td>
+            <td class="highlight">Frame-Level</td>
+          </tr>
+          <tr>
+            <td>Real-Time</td>
+            <td>No</td>
+            <td class="highlight">Yes</td>
+            <td>No</td>
+            <td class="highlight">Yes</td>
+            <td class="highlight">Yes</td>
+            <td>No</td>
+            <td class="highlight">Yes</td>
+          </tr>
+          <tr>
+            <td>Control Generalization</td>
+            <td class="highlight">Yes</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td>No</td>
+            <td class="highlight">Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+  <div class="content">
+    <div class="text">  
+        <h1> The Matrix World</h1>
         <p>
           <strong>The Matrix</strong> offers real-time, responsive control in first- and third-person perspectives, enabling seamless exploration of dynamic environments. Trained on data from AAA games like <em>Forza Horizon 5</em> and <em>Cyberpunk 2077</em> as well as real-world footage, it lets users navigate diverse terrains—deserts, cities, forests, and more—in unbroken, continuous videos. <strong>Each keyboard command responds with frame-level precision, delivering a four-frame response similar to AAA games.</strong> Explore the gallery below to experience <strong>The Matrix</strong> across immersive landscapes.<br><br>
           Click to play, double-click for full screen, or <a onclick="playAll($('.tiling-video-wrapper')[0])">click here to play all demos</a>. Caution: may use mobile data.
@@ -344,23 +432,36 @@ https://templatemo.com/tm-520-highway
     </div>
 
   </div>
-
-  <div class="intermediate-context">
-    <p>
-      Thanks to the <em>GameData</em> platform, we are capable of collecting
-      massive action-frame pairs from Unreal games,
-      feeding the frame-level precise control ability
-      of <em>The Matrix</em>.
-    </p>
+  <div class="code-rain-container">
+    <canvas></canvas>
+    <div class="content">
+      <img src="figs/gamedata.png" alt="Example PNG">
+      <div class="text">
+        <h3>First OpenSource Dataset for Per-Frame Precise Moving Control</h3>
+        <p>
+          The <strong>GameData Platform</strong> leverages tools like <em>Cheat Engine</em> to capture in-game world status, filtering out unreliable data, and employs the <em>Reshade plugin</em> to remove game UI and HUD. This allows for the automated collection of massive, clean, and precise action-frame pairs. To further innovation, we have open-sourced all the data, providing a valuable resource for future research in this domain.
+        </p>
+        <h4>Key Advantages:</h4>
+        <ul>
+          <li><strong>Data Quality:</strong> Automated filtering ensures clean and precise action-frame pairs.</li>
+          <li><strong>Scalability:</strong> Enables efficient collection of large-scale datasets.</li>
+          <li><strong>Open Collaboration:</strong> Open-sourced data fosters research and innovation in the field.</li>
+        </ul>
+        
+      </div>
+    </div>
+    <div class="content">
+      <div class="text">
+        <p>
+          Running at 16 FPS, <em>The Matrix</em> demonstrates strong generalization from virtual to real-world settings, 
+          where collecting sustained data is challenging. This approach showcases the potential
+           of AAA game data for creating robust, adaptable world models (<a
+           onclick="playAll($('.tiling-video-wrapper')[1])">Play All Demos</a> <span style="color:#dd3344;"></span>):
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="intermediate-context">
-    <p>
-      Running at 16 FPS, it demonstrates strong generalization from virtual to real-world settings, 
-      where collecting sustained data is challenging. This approach showcases the potential
-       of AAA game data for creating robust, adaptable world models (<a
-       onclick="playAll($('.tiling-video-wrapper')[1])">Play All Demos</a> <span style="color:#dd3344;"></span>):
-    </p>
-  </div>
+  
 
   <!-- <div class="intermediate-title-l2">
     <span>&nbsp;&nbsp;Walking around the City(<a
@@ -705,6 +806,8 @@ https://templatemo.com/tm-520-highway
   </div>
 </div>
 
+
+
   <div class="intermediate-title-l2">
     <span>&nbsp;&nbsp;Generalize to Unseen Scene</span>
   </div>
@@ -767,6 +870,23 @@ https://templatemo.com/tm-520-highway
   </div>
 </div>
 
+<div class="code-rain-container">
+  <canvas></canvas>
+  <div class="content">
+    <div class="text">
+    <h1>Methology</h1>
+    </div>
+  </div>
+  <div class="content">
+    <img src="figs/interactive.png" alt="Interactive Module">
+    <div class="content">
+      <h3>The Interactive Module</h3>
+      <p>
+        We employ the Interactive Module to realize frame-level precise control.
+      </p>
+    </div>
+  </div>
+</div>
 
 
   <div class="intermediate-title">
