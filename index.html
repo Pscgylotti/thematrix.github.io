@@ -64,106 +64,121 @@ https://templatemo.com/tm-520-highway
     <div class="content">
       <div class="text">
         <h1>The First Precise Frame-Level Moving Control for Realistic World Simulation!</h1>
-        <p><strong>How close are we to realizing the vision of <em>The Matrix (1999)</em>, where AI crafts a fully immersive, interactive world, blurring the line between reality and illusion?</strong> Imagine a limitless digital universe, created in real-time with visuals that rival reality itself. This project is a pioneering step toward that vision—a first glimpse into humanity’s own "Matrix."</p>
+        <p><strong>How close are we to realizing the vision of <em>The Matrix (1999)</em>, where AI crafts a fully
+            immersive, interactive world, blurring the line between reality and illusion?</strong> Imagine a limitless
+          digital universe, created in real-time with visuals that rival reality itself. This project is a pioneering
+          step toward that vision—a first glimpse into humanity’s own "Matrix."</p>
         <p>Our system breaks new ground in world simulation by delivering:</p>
         <ul>
-          <li><strong>Frame-level precision</strong> in user interaction, matching the responsiveness portrayed in the film.</li>
+          <li><strong>Frame-level precision</strong> in user interaction, matching the responsiveness portrayed in the
+            film.</li>
           <li><strong>AAA-level visuals</strong> for immersive scenes nearly indistinguishable from reality.</li>
-          <li><strong>Infinite generative capacity</strong> for endless exploration, surpassing the limits of current video models.</li>
+          <li><strong>Infinite generative capacity</strong> for endless exploration, surpassing the limits of current
+            video models.</li>
         </ul>
-        <p><strong>Curious?</strong> Read on to explore the technology powering <em>The Matrix</em> and experience the feel of a self-sustaining digital universe!</p>
+        <p><strong>Curious?</strong> Read on to explore the technology powering <em>The Matrix</em> and experience the
+          feel of a self-sustaining digital universe!</p>
       </div>
     </div>
     <div class="content">
       <h4>Comparison of Recent Generative Models for Game Simulation</h4>
-    <p>
-      <strong><em>The Matrix</em></strong> distinguishes itself as a foundation model capable of generating infinitely long videos with AAA game quality, high resolution, frame-level real-time control, and robust domain generalization. Here, * indicates concurrent work with <em>The Matrix</em>, and supervised/unsupervised refers to the video data with/without true control signal.
-    </p>
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Genie</th>
-            <th>DIAMOND</th>
-            <th>MarioVGG*</th>
-            <th>GameNGen*</th>
-            <th>Oasis*</th>
-            <th>GameGen-X*</th>
-            <th>The Matrix</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Video Length</td>
-            <td>2s</td>
-            <td class="highlight">Infinite</td>
-            <td>6 Frames</td>
-            <td class="highlight">Infinite</td>
-            <td class="highlight">Infinite</td>
-            <td>4s–16s</td>
-            <td class="highlight">Infinite</td>
-          </tr>
-          <tr>
-            <td>Training Corpus</td>
-            <td>2D Games (unsupervised)</td>
-            <td>Atari, CS:GO</td>
-            <td>Mario</td>
-            <td>DOOM</td>
-            <td>Minecraft</td>
-            <td>AAA Games</td>
-            <td class="highlight">AAA Games (supervised, small)<br>Internet Videos (unsupervised, large)</td>
-          </tr>
-          <tr>
-            <td>Resolution</td>
-            <td>360p</td>
-            <td>$280×150$</td>
-            <td>$64×48$</td>
-            <td>240p</td>
-            <td class="highlight">720p</td>
-            <td class="highlight">720p</td>
-            <td class="highlight">720p</td>
-          </tr>
-          <tr>
-            <td>Control</td>
-            <td class="highlight">Frame-Level</td>
-            <td class="highlight">Frame-Level</td>
-            <td>Video-Level</td>
-            <td class="highlight">Frame-Level</td>
-            <td class="highlight">Frame-Level</td>
-            <td>Video-Level</td>
-            <td class="highlight">Frame-Level</td>
-          </tr>
-          <tr>
-            <td>Real-Time</td>
-            <td>No</td>
-            <td class="highlight">Yes</td>
-            <td>No</td>
-            <td class="highlight">Yes</td>
-            <td class="highlight">Yes</td>
-            <td>No</td>
-            <td class="highlight">Yes</td>
-          </tr>
-          <tr>
-            <td>Control Generalization</td>
-            <td class="highlight">Yes</td>
-            <td>No</td>
-            <td>No</td>
-            <td>No</td>
-            <td>No</td>
-            <td>No</td>
-            <td class="highlight">Yes</td>
-          </tr>
-        </tbody>
-      </table>
+      <p>
+        <strong><em>The Matrix</em></strong> distinguishes itself as a foundation model capable of generating infinitely
+        long videos with AAA game quality, high resolution, frame-level real-time control, and robust domain
+        generalization. Here, * indicates concurrent work with <em>The Matrix</em>, and supervised/unsupervised refers
+        to the video data with/without true control signal.
+      </p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Genie</th>
+              <th>DIAMOND</th>
+              <th>MarioVGG*</th>
+              <th>GameNGen*</th>
+              <th>Oasis*</th>
+              <th>GameGen-X*</th>
+              <th>The Matrix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Video Length</td>
+              <td>2s</td>
+              <td class="highlight">Infinite</td>
+              <td>6 Frames</td>
+              <td class="highlight">Infinite</td>
+              <td class="highlight">Infinite</td>
+              <td>4s–16s</td>
+              <td class="highlight">Infinite</td>
+            </tr>
+            <tr>
+              <td>Training Corpus</td>
+              <td>2D Games (unsupervised)</td>
+              <td>Atari, CS:GO</td>
+              <td>Mario</td>
+              <td>DOOM</td>
+              <td>Minecraft</td>
+              <td>AAA Games</td>
+              <td class="highlight">AAA Games (supervised, small)<br>Internet Videos (unsupervised, large)</td>
+            </tr>
+            <tr>
+              <td>Resolution</td>
+              <td>360p</td>
+              <td>$280×150$</td>
+              <td>$64×48$</td>
+              <td>240p</td>
+              <td class="highlight">720p</td>
+              <td class="highlight">720p</td>
+              <td class="highlight">720p</td>
+            </tr>
+            <tr>
+              <td>Control</td>
+              <td class="highlight">Frame-Level</td>
+              <td class="highlight">Frame-Level</td>
+              <td>Video-Level</td>
+              <td class="highlight">Frame-Level</td>
+              <td class="highlight">Frame-Level</td>
+              <td>Video-Level</td>
+              <td class="highlight">Frame-Level</td>
+            </tr>
+            <tr>
+              <td>Real-Time</td>
+              <td>No</td>
+              <td class="highlight">Yes</td>
+              <td>No</td>
+              <td class="highlight">Yes</td>
+              <td class="highlight">Yes</td>
+              <td>No</td>
+              <td class="highlight">Yes</td>
+            </tr>
+            <tr>
+              <td>Control Generalization</td>
+              <td class="highlight">Yes</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td class="highlight">Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    </div>
-  <div class="content">
-    <div class="text">  
+    <div class="content">
+      <div class="text">
         <h1> The Matrix World</h1>
         <p>
-          <strong>The Matrix</strong> offers real-time, responsive control in first- and third-person perspectives, enabling seamless exploration of dynamic environments. Trained on data from AAA games like <em>Forza Horizon 5</em> and <em>Cyberpunk 2077</em> as well as real-world footage, it lets users navigate diverse terrains—deserts, cities, forests, and more—in unbroken, continuous videos. <strong>Each keyboard command responds with frame-level precision, delivering a four-frame response similar to AAA games.</strong> Explore the gallery below to experience <strong>The Matrix</strong> across immersive landscapes.<br><br>
-          Click to play, double-click for full screen, or <a onclick="playAll($('.tiling-video-wrapper')[0])">click here to play all demos</a>. Caution: may use mobile data.
+          <strong>The Matrix</strong> offers real-time, responsive control in first- and third-person perspectives,
+          enabling seamless exploration of dynamic environments. Trained on data from AAA games like <em>Forza Horizon
+            5</em> and <em>Cyberpunk 2077</em> as well as real-world footage, it lets users navigate diverse
+          terrains—deserts, cities, forests, and more—in unbroken, continuous videos. <strong>Each keyboard command
+            responds with frame-level precision, delivering a four-frame response similar to AAA games.</strong> Explore
+          the gallery below to experience <strong>The Matrix</strong> across immersive landscapes.<br><br>
+          Click to play, double-click for full screen, or <a onclick="playAll($('.tiling-video-wrapper')[0])">click here
+            to play all demos</a>. Caution: may use mobile data.
         </p>
       </div>
     </div>
@@ -439,7 +454,10 @@ https://templatemo.com/tm-520-highway
       <div class="text">
         <h3>First OpenSource Dataset for Per-Frame Precise Moving Control</h3>
         <p>
-          The <strong>GameData Platform</strong> leverages tools like <em>Cheat Engine</em> to capture in-game world status, filtering out unreliable data, and employs the <em>Reshade plugin</em> to remove game UI and HUD. This allows for the automated collection of massive, clean, and precise action-frame pairs. To further innovation, we have open-sourced all the data, providing a valuable resource for future research in this domain.
+          The <strong>GameData Platform</strong> leverages tools like <em>Cheat Engine</em> to capture in-game world
+          status, filtering out unreliable data, and employs the <em>Reshade plugin</em> to remove game UI and HUD. This
+          allows for the automated collection of massive, clean, and precise action-frame pairs. To further innovation,
+          we have open-sourced all the data, providing a valuable resource for future research in this domain.
         </p>
         <h4>Key Advantages:</h4>
         <ul>
@@ -447,21 +465,21 @@ https://templatemo.com/tm-520-highway
           <li><strong>Scalability:</strong> Enables efficient collection of large-scale datasets.</li>
           <li><strong>Open Collaboration:</strong> Open-sourced data fosters research and innovation in the field.</li>
         </ul>
-        
+
       </div>
     </div>
     <div class="content">
       <div class="text">
         <p>
-          Running at 16 FPS, <em>The Matrix</em> demonstrates strong generalization from virtual to real-world settings, 
+          Running at 16 FPS, <em>The Matrix</em> demonstrates strong generalization from virtual to real-world settings,
           where collecting sustained data is challenging. This approach showcases the potential
-           of AAA game data for creating robust, adaptable world models (<a
-           onclick="playAll($('.tiling-video-wrapper')[1])">Play All Demos</a> <span style="color:#dd3344;"></span>):
+          of AAA game data for creating robust, adaptable world models (<a
+            onclick="playAll($('.tiling-video-wrapper')[1])">Play All Demos</a> <span style="color:#dd3344;"></span>):
         </p>
       </div>
     </div>
   </div>
-  
+
 
   <!-- <div class="intermediate-title-l2">
     <span>&nbsp;&nbsp;Walking around the City(<a
@@ -804,7 +822,7 @@ https://templatemo.com/tm-520-highway
       </div>
     </div>
   </div>
-</div>
+  </div>
 
 
 
@@ -838,68 +856,68 @@ https://templatemo.com/tm-520-highway
   </div>
 
 
-<div class="intermediate-title-l2">
-  <span>&nbsp;&nbsp;Generalize Control to Real World Objects</span>
-</div>
-<div class="video-slider">
-  <div class="slide">
-    <video preload="none" poster="videos_icon/generalization_img_10.png" onclick="setControls(this)">
-      <source src="videos/generalization_processed_10.mp4" type="video/mp4" />
-    </video>
-    <p onclick="clickToCopy(this)"><span>Prompt: </span>A male character dressed in a formal suit is walking in the
-      office.
-    </p>
+  <div class="intermediate-title-l2">
+    <span>&nbsp;&nbsp;Generalize Control to Real World Objects</span>
   </div>
-
-  <div class="slide">
-    <video preload="none" poster="videos_icon/generalization_img_14.png" onclick="setControls(this)">
-      <source src="videos/generalization_processed_14.mp4" type="video/mp4" />
-    </video>
-    <p onclick="clickToCopy(this)"><span>Prompt: </span>The video features a close-up of a woman inside a car, wearing
-      oversized sunglasses and dressed in black.
-    </p>
-  </div>
-
-  <div class="slide">
-    <video preload="none" poster="videos_icon/generalization_img_15.png" onclick="setControls(this)">
-      <source src="videos/generalization_processed_15.mp4" type="video/mp4" />
-    </video>
-    <p onclick="clickToCopy(this)"><span>Prompt: </span>The video shows a little girl using a vacuum cleaner to move
-      across the wooden floor at home.
-    </p>
-  </div>
-</div>
-
-<div class="code-rain-container">
-  <canvas></canvas>
-  <div class="content">
-    <div class="text">
-    <h1>Methology</h1>
+  <div class="video-slider">
+    <div class="slide">
+      <video preload="none" poster="videos_icon/generalization_img_10.png" onclick="setControls(this)">
+        <source src="videos/generalization_processed_10.mp4" type="video/mp4" />
+      </video>
+      <p onclick="clickToCopy(this)"><span>Prompt: </span>A male character dressed in a formal suit is walking in the
+        office.
+      </p>
     </div>
-  </div>
-  <div class="content">
-    <img src="figs/interactive.png" alt="Interactive Module">
-    <div class="content">
-      <h3>The Interactive Module</h3>
-      <p>
-        We employ the Interactive Module to realize frame-level precise control.
+
+    <div class="slide">
+      <video preload="none" poster="videos_icon/generalization_img_14.png" onclick="setControls(this)">
+        <source src="videos/generalization_processed_14.mp4" type="video/mp4" />
+      </video>
+      <p onclick="clickToCopy(this)"><span>Prompt: </span>The video features a close-up of a woman inside a car, wearing
+        oversized sunglasses and dressed in black.
+      </p>
+    </div>
+
+    <div class="slide">
+      <video preload="none" poster="videos_icon/generalization_img_15.png" onclick="setControls(this)">
+        <source src="videos/generalization_processed_15.mp4" type="video/mp4" />
+      </video>
+      <p onclick="clickToCopy(this)"><span>Prompt: </span>The video shows a little girl using a vacuum cleaner to move
+        across the wooden floor at home.
       </p>
     </div>
   </div>
-</div>
+
+  <div class="code-rain-container">
+    <canvas></canvas>
+    <div class="content">
+      <div class="text">
+        <h1>Methology</h1>
+      </div>
+    </div>
+    <div class="content">
+      <img src="figs/interactive.png" alt="Interactive Module">
+      <div class="content">
+        <h3>The Interactive Module</h3>
+        <p>
+          We employ the Interactive Module to realize frame-level precise control.
+        </p>
+      </div>
+    </div>
+  </div>
 
 
   <div class="intermediate-title">
     <span>&nbsp;&nbsp;Extend to Generate Infinte-Horizon Wolrd</span>
   </div>
   <div class="intermediate-context">
-    <p>Current state-of-the-art DiT-based video generation models (e.g., CogVideo, Open-Sora) are limited to 
-      producing videos just a few seconds long, making them insufficient for creating 
-      an infinite-horizon world. <strong>The Matrix</strong> overcomes this limitation by introducing 
+    <p>Current state-of-the-art DiT-based video generation models (e.g., CogVideo, Open-Sora) are limited to
+      producing videos just a few seconds long, making them insufficient for creating
+      an infinite-horizon world. <strong>The Matrix</strong> overcomes this limitation by introducing
       Long-Short-Term Memory Denoising Probability Models (LSTM-DPM), which significantly extends the receptive
-       field of attention computations while maintaining the same computational cost. 
-       This innovation enables the generation of high-quality, super-long-duration videos with consistent visuals, 
-       all within an achievable compute budget.</p>
+      field of attention computations while maintaining the same computational cost.
+      This innovation enables the generation of high-quality, super-long-duration videos with consistent visuals,
+      all within an achievable compute budget.</p>
   </div>
   <div class="intermediate-title-l2">
     1 Min Gallery (1 min clip with 16 fps ~ 960 frames)
@@ -1067,12 +1085,12 @@ https://templatemo.com/tm-520-highway
   <div class="intermediate-title-l2">
     Extend to General Video Generation
     <div class="intermediate-context">
-      The proposed Long-Short-Time Morphing Denoising Probability Model (LSTM-DPM) can be 
-      integrated into general DiT architecture diffusion models to enable extended-duration video 
-      generation. This innovation represents a significant contribution to the broader field of 
-      video generation, providing a pathway for creating high-quality, long-form videos 
+      The proposed Long-Short-Time Morphing Denoising Probability Model (LSTM-DPM) can be
+      integrated into general DiT architecture diffusion models to enable extended-duration video
+      generation. This innovation represents a significant contribution to the broader field of
+      video generation, providing a pathway for creating high-quality, long-form videos
       that maintain coherence and visual consistency over time.
-  </div>
+    </div>
   </div>
 
   <div class="tiling-video-wrapper">
@@ -1086,10 +1104,10 @@ https://templatemo.com/tm-520-highway
         <div class="tiling-prompt">
           <div>The video shows a view of the city harbor from a high angle.
             In the center of the picture, a large yacht is moored at the pier,
-             and other small boats are scattered around. 
-             The harbor is surrounded by an ancient stone wall with a bridge connecting the two banks. 
-             In the distance, there are dense urban buildings, some of which are decorated with domes on top. 
-             The whole scene is at dusk, and the sky is light blue and orange.</div>
+            and other small boats are scattered around.
+            The harbor is surrounded by an ancient stone wall with a bridge connecting the two banks.
+            In the distance, there are dense urban buildings, some of which are decorated with domes on top.
+            The whole scene is at dusk, and the sky is light blue and orange.</div>
         </div>
       </div>
     </div>
@@ -1103,10 +1121,10 @@ https://templatemo.com/tm-520-highway
         <div class="tiling-prompt">
           <div>The video shows a view of the city harbor from a high angle.
             In the center of the picture, a large yacht is moored at the pier,
-             and other small boats are scattered around. 
-             The harbor is surrounded by an ancient stone wall with a bridge connecting the two banks. 
-             In the distance, there are dense urban buildings, some of which are decorated with domes on top. 
-             The whole scene is at dusk, and the sky is light blue and orange.</div>
+            and other small boats are scattered around.
+            The harbor is surrounded by an ancient stone wall with a bridge connecting the two banks.
+            In the distance, there are dense urban buildings, some of which are decorated with domes on top.
+            The whole scene is at dusk, and the sky is light blue and orange.</div>
         </div>
       </div>
     </div>
@@ -1119,13 +1137,14 @@ https://templatemo.com/tm-520-highway
         <div class="tiling-prompt">
           <div>The video shows a view of the city harbor from a high angle.
             In the center of the picture, a large yacht is moored at the pier,
-             and other small boats are scattered around. 
-             The harbor is surrounded by an ancient stone wall with a bridge connecting the two banks. 
-             In the distance, there are dense urban buildings, some of which are decorated with domes on top. 
-             The whole scene is at dusk, and the sky is light blue and orange.</div>
+            and other small boats are scattered around.
+            The harbor is surrounded by an ancient stone wall with a bridge connecting the two banks.
+            In the distance, there are dense urban buildings, some of which are decorated with domes on top.
+            The whole scene is at dusk, and the sky is light blue and orange.</div>
         </div>
       </div>
-    </div>    <div class="tiling-video-outer">
+    </div>
+    <div class="tiling-video-outer">
       <div class="tiling-video-container">
         <video preload="none" poster="videos_icon/long_video_0001.png" onclick="toggleVideoPlay(this)"
           class="tiling-video" loop>
@@ -1134,10 +1153,10 @@ https://templatemo.com/tm-520-highway
         <div class="tiling-prompt">
           <div>The video shows a view of the city harbor from a high angle.
             In the center of the picture, a large yacht is moored at the pier,
-             and other small boats are scattered around. 
-             The harbor is surrounded by an ancient stone wall with a bridge connecting the two banks. 
-             In the distance, there are dense urban buildings, some of which are decorated with domes on top. 
-             The whole scene is at dusk, and the sky is light blue and orange.</div>
+            and other small boats are scattered around.
+            The harbor is surrounded by an ancient stone wall with a bridge connecting the two banks.
+            In the distance, there are dense urban buildings, some of which are decorated with domes on top.
+            The whole scene is at dusk, and the sky is light blue and orange.</div>
         </div>
       </div>
     </div>
@@ -1210,7 +1229,7 @@ https://templatemo.com/tm-520-highway
     </div>
   </div>
 
-  <!-- <section class="overlay-menu">
+  <section class="overlay-menu">
     <div class="container">
       <div class="row">
         <div class="main-menu">
@@ -1238,7 +1257,7 @@ https://templatemo.com/tm-520-highway
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
@@ -1261,7 +1280,7 @@ https://templatemo.com/tm-520-highway
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: (current_ratio>1.0)?3:1,
+      slidesToShow: (current_ratio > 1.0) ? 3 : 1,
       draggable: false,
       slidesToScroll: 1,
     });
@@ -1367,4 +1386,5 @@ https://templatemo.com/tm-520-highway
   // 调用代码雨效果
   initCodeRain('.code-rain-container', '0 1', ' ', 50);
 </script>
+
 </html>
