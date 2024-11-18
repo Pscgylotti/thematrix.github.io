@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -28,6 +29,7 @@ https://templatemo.com/tm-520-highway
   <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="js/code-rain.js"></script>
 </head>
 
 <body>
@@ -56,35 +58,28 @@ https://templatemo.com/tm-520-highway
       <source src="videos/teaser.mp4" type="video/mp4" />
     </video>
   </div>
-  <div class="intermediate-title" id="startup">
-    <span>The First Precise Frame-Level Moving Control for Realistic World Simulation!</span>
-  </div>
-  <div class="intermediate-context">
-    <p><strong>How close are we to realizing the vision of <em>The Matrix (1999)</em>, where AI crafts a fully immersive, interactive world, blurring the line between reality and illusion?</strong> Imagine a limitless digital universe, created in real-time with visuals that rival reality itself. This project is a pioneering step toward that vision—a first glimpse into humanity’s own "Matrix."</p>
 
-    <p>Our system breaks new ground in world simulation by delivering:</p>
-
-    <ul>
-      <li><strong>Frame-level precision</strong> in user interaction, matching the responsiveness portrayed in the film.</li>
-      <li><strong>AAA-level visuals</strong> for immersive scenes nearly indistinguishable from reality.</li>
-      <li><strong>Infinite generative capacity</strong> for endless exploration, surpassing the limits of current video models.</li>
-    </ul>
-
-    <p><strong>Curious?</strong> Read on to explore the technology powering <em>The Matrix</em> and experience the feel of a self-sustaining digital universe!</p>
-
+  <div class="code-rain-container no-image">
+    <canvas></canvas>
+    <div class="content">
+      <div class="text">
+        <h1>The First Precise Frame-Level Moving Control for Realistic World Simulation!</h1>
+        <p><strong>How close are we to realizing the vision of <em>The Matrix (1999)</em>, where AI crafts a fully immersive, interactive world, blurring the line between reality and illusion?</strong> Imagine a limitless digital universe, created in real-time with visuals that rival reality itself. This project is a pioneering step toward that vision—a first glimpse into humanity’s own "Matrix."</p>
+        <p>Our system breaks new ground in world simulation by delivering:</p>
+        <ul>
+          <li><strong>Frame-level precision</strong> in user interaction, matching the responsiveness portrayed in the film.</li>
+          <li><strong>AAA-level visuals</strong> for immersive scenes nearly indistinguishable from reality.</li>
+          <li><strong>Infinite generative capacity</strong> for endless exploration, surpassing the limits of current video models.</li>
+        </ul>
+        <p><strong>Curious?</strong> Read on to explore the technology powering <em>The Matrix</em> and experience the feel of a self-sustaining digital universe!</p>
+        <h1>The Matrix Gallery</h1>
+        <p>
+          <strong>The Matrix</strong> offers real-time, responsive control in first- and third-person perspectives, enabling seamless exploration of dynamic environments. Trained on data from AAA games like <em>Forza Horizon 5</em> and <em>Cyberpunk 2077</em> as well as real-world footage, it lets users navigate diverse terrains—deserts, cities, forests, and more—in unbroken, continuous videos. <strong>Each keyboard command responds with frame-level precision, delivering a four-frame response similar to AAA games.</strong> Explore the gallery below to experience <strong>The Matrix</strong> across immersive landscapes.<br><br>
+          Click to play, double-click for full screen, or <a onclick="playAll($('.tiling-video-wrapper')[0])">click here to play all demos</a>. Caution: may use mobile data.
+        </p>
+      </div>
+    </div>
   </div>
-  
-  <div class="intermediate-title" id="startup">
-    <span>The Matrix Gallery</span>
-  </div>
-  <div class="intermediate-context">
-    <p>
-      <strong>The Matrix</strong> offers real-time, responsive control in first- and third-person perspectives, enabling seamless exploration of dynamic environments. Trained on data from AAA games like <em>Forza Horizon 5</em> and <em>Cyberpunk 2077</em> as well as real-world footage, it lets users navigate diverse terrains—deserts, cities, forests, and more—in unbroken, continuous videos. <strong>Each keyboard command responds with frame-level precision, delivering a four-frame response similar to AAA games.</strong> Explore the gallery below to experience <strong>The Matrix</strong> across immersive landscapes.<br><br>
-      Click to play, double-click for full screen, or <a onclick="playAll($('.tiling-video-wrapper')[0])">click here to play all demos</a>. Caution: may use mobile data.
-    </p>
-    
-  </div>
-  
 
   <!-- <div class="intermediate-title-l2">
     <span>&nbsp;&nbsp;Driving in the Wild (<a
@@ -350,6 +345,14 @@ https://templatemo.com/tm-520-highway
 
   </div>
 
+  <div class="intermediate-context">
+    <p>
+      Thanks to the <em>GameData</em> platform, we are capable of collecting
+      massive action-frame pairs from Unreal games,
+      feeding the frame-level precise control ability
+      of <em>The Matrix</em>.
+    </p>
+  </div>
   <div class="intermediate-context">
     <p>
       Running at 16 FPS, it demonstrates strong generalization from virtual to real-world settings, 
@@ -1240,5 +1243,8 @@ https://templatemo.com/tm-520-highway
 </script>
 <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
 <script>eruda.init();</script>
-
+<script>
+  // 调用代码雨效果
+  initCodeRain('.code-rain-container', '0 1', ' ', 50);
+</script>
 </html>

@@ -203,3 +203,63 @@
   background-color: #f2dede;
   border-color: #ebccd1;
 }
+
+<style>
+    .container {
+        display: flex; /* 启用Flexbox */
+        align-items: flex-start; /* 垂直对齐顶部 */
+    }
+    .image, .text {
+        padding: 10px; /* 添加内边距 */
+    }
+    .image img {
+        max-width: 100%; /* 图片宽度不超过其容器 */
+        height: auto;
+    }
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column; /* 在小屏幕上堆叠元素 */
+        }
+    }
+</style>
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* 防止滚动条 */
+  background: black; /* 黑色背景 */
+}
+
+canvas {
+  display: block;
+  position: absolute; /* 让 canvas 绝对定位 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* 将 canvas 设置为背景 */
+}
+
+.code-rain-container {
+  position: relative; /* 创建定位上下文 */
+  width: 100%;
+  min-height: 100vh; /* 保证占满屏幕高度 */
+}
+
+.code-rain-container .content {
+  position: relative; /* 确保内容在 canvas 上方 */
+  z-index: 1; /* 提升内容层级 */
+  color: white; /* 白色文字 */
+  text-align: center;
+  padding: 20px;
+}
+
+.code-rain-container .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.code-rain-container .content ul li {
+  margin: 10px 0;
+}
