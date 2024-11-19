@@ -371,6 +371,7 @@ a:hover {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
+
 }
 
 /* 小屏幕布局调整 */
@@ -378,10 +379,12 @@ a:hover {
   .side-by-side {
     flex-direction: column; /* 小屏幕时改为纵向排列 */
     text-align: center; /* 文本居中 */
+    display: block;
   }
 
   .side-by-side img {
     max-width: 80%; /* 小屏幕时图片宽度调整 */
+    object-fit: contain;
   }
 
   .side-by-side .text {
