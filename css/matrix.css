@@ -403,7 +403,7 @@ ul-small {
 
 .small-left {
   font-size: 18px;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .double-dagger::after {
@@ -413,3 +413,5 @@ ul-small {
 .dagger::after {
   content: "\2020"; /* 这是Dagger的Unicode */
 }
+
+
