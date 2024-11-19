@@ -97,9 +97,8 @@
 .intermediate-title-l2{
 
   background-color: #161616;
-  color:#d7d7d7;
-  font-size: 24px;
-  text-align: left;
+  color: #FFFF80; /* 浅黄色 */
+  font-weight: 600;
   margin:0.5em 0 0.5em 0;
   padding: 0 2em;
   box-shadow: 0 0 0 0.5em rgba(22, 22, 22, 1.0);
@@ -347,3 +346,63 @@ a {
 a:hover {
   color: #FFFFFF; /* 悬停时为白色 */
 }
+
+
+.side-by-side {
+  display: flex;
+  flex-wrap: wrap; /* 允许内容在宽度不足时换行 */
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: space-between; /* 内容左右分布 */
+  gap: 10px; /* 图片和文本间距 */
+  transition: all 0.3s ease-in-out;
+}
+
+.side-by-side img {
+  max-width: 45%; /* 图片最大宽度 */
+  min-width: 200px; /* 限制最小宽度 */
+  height: auto; /* 保持图片比例 */
+  flex: 1; /* 图片缩放 */
+}
+
+.side-by-side .text {
+  max-width: 55%; /* 文本最大宽度 */
+  flex: 1; /* 文本缩放 */
+  font-size: 18px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 小屏幕布局调整 */
+@media (max-width: 768px) {
+  .side-by-side {
+    flex-direction: column; /* 小屏幕时改为纵向排列 */
+    text-align: center; /* 文本居中 */
+  }
+
+  .side-by-side img {
+    max-width: 80%; /* 小屏幕时图片宽度调整 */
+  }
+
+  .side-by-side .text {
+    max-width: 100%; /* 文本占满宽度 */
+  }
+}
+
+
+.left-align {
+  text-align: left;
+}
+
+
+
+ul-small {
+    font-size: 14px; /* 设置你所需的字体大小 */
+    /* text-align: left; */
+}
+
+.small-left {
+  font-size: 18px;
+  text-align: left;
+}
+

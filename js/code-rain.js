@@ -1,4 +1,4 @@
-function initCodeRain(selector, text = 'The matrix of hackers', symbol = '', speed = 1000) {
+function initCodeRain(selector, text = 'The matrix of hackers', symbol = '', speed = 30) {
   const containers = document.querySelectorAll(selector);
 
   containers.forEach(container => {
