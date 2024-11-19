@@ -406,3 +406,10 @@ ul-small {
   text-align: left;
 }
 
+.double-dagger::after {
+  content: "\2021"; /* 这是双Dagger的Unicode */
+}
+
+.dagger::after {
+  content: "\2020"; /* 这是Dagger的Unicode */
+}

@@ -48,7 +48,9 @@ https://templatemo.com/tm-520-highway
       <div class="inner">
         <h1>Welcome to <em>The Matrix</em></h1>
         <p>Infinite-Horizon World Generation with Real-Time Interaction</p>
-        <p>The Matrix Team</p>
+        <p, style="font-size: 18px;text-align:center"><em><span class="double-dagger">Ruili Feng*</span> , Han Zhang*, Zhantao Yang*, Jie Xiao*, Zhilei Shu*, Zhiheng Liu, Andy Zheng, Yukun Huang, <span class="dagger">Yu Liu</span>, Hongyang Zhang</em></p>
+        <p, style="font-size: 12px;text-align:center">* Equal Contribution, <span class="double-dagger"> </span> Project Leader, <span class="dagger"></span> Engineer Advisor</p>
+        <p, style="font-size: 14px;">Alibaba Group, University of Hong Kong, University of Waterloo, Vector Institute</p>
         <div class="scroll-icon">
           <a class="scrollTo" data-scrollTo="startup" href="#"><img src="img/scroll-icon.png" alt="" /></a>
         </div>
@@ -99,7 +101,7 @@ https://templatemo.com/tm-520-highway
               <th>GameNGen*</th>
               <th>Oasis*</th>
               <th>GameGen-X*</th>
-              <th>The Matrix</th>
+              <th><em>The Matrix</em></th>
             </tr>
           </thead>
           <tbody>
@@ -169,14 +171,14 @@ https://templatemo.com/tm-520-highway
     </div>
     <div class="content">
       <div class="text">
-        <h1> The Matrix World</h1>
+        <h1> <em>The Matrix</em> World</h1>
         <p>
-          <strong>The Matrix</strong> offers real-time, responsive control in first- and third-person perspectives,
+          <strong><em>The Matrix</em></strong> offers real-time, responsive control in first- and third-person perspectives,
           enabling seamless exploration of dynamic environments. Trained on data from AAA games like <em>Forza Horizon
             5</em> and <em>Cyberpunk 2077</em> as well as real-world footage, it lets users navigate diverse
           terrains—deserts, cities, forests, and more—in unbroken, continuous videos. <strong>Each keyboard command
             responds with frame-level precision, delivering a four-frame response similar to AAA games.</strong> Explore
-          the gallery below to experience <strong>The Matrix</strong> across immersive landscapes.<br><br>
+          the gallery below to experience <strong><em>The Matrix</em></strong> across immersive landscapes.<br><br>
           Click to play, double-click for full screen, or <a onclick="playAll($('.tiling-video-wrapper')[0])">click here
             to play all demos</a>. Caution: may use mobile data.
         </p>
@@ -467,10 +469,11 @@ https://templatemo.com/tm-520-highway
   <div class="code-rain-container">
     <canvas></canvas>
     <div class="content">
+      <h3>First OpenSource Dataset for Per-Frame Precise Moving Control</h3>
+      <div class="side-by-side">
       <img src="figs/gamedata.png" alt="Example PNG">
       <div class="text">
-        <h3>First OpenSource Dataset for Per-Frame Precise Moving Control</h3>
-        <p>
+        <p, class="small-left">
           The <strong>GameData Platform</strong> leverages tools like <em>Cheat Engine</em> to capture in-game world
           status, filtering out unreliable data, and employs the <em>Reshade plugin</em> to remove game UI and HUD. This
           allows for the automated collection of massive, clean, and precise action-frame pairs. To further innovation,
@@ -484,6 +487,7 @@ https://templatemo.com/tm-520-highway
         </ul>
 
       </div>
+    </div>
     </div>
     <div class="content">
       <div class="text">
@@ -966,17 +970,17 @@ https://templatemo.com/tm-520-highway
       <img src="figs/trainprocess.png" alt="Interactive Module">
       <div class="text">
       <p, class="small-left">
-        The training process of <strong>The Matrix</strong> begins with a pretrained video DiT backbone. The <strong>Interactive Module</strong> is first warmed up with data from the <strong>GameData Platform</strong> using unsupervised LoRA to focus on movement rather than visuals. Subsequently, precise frame-level control is achieved through targeted training. With <strong>Swin-DPM</strong> enabling infinite-length generation and <strong>Stream Consistency Models (SCMs)</strong> ensuring real-time speeds, <strong>The Matrix</strong> delivers groundbreaking video simulations.
+        The training process of <strong><em>The Matrix</em></strong> begins with a pretrained video DiT backbone. The <strong>Interactive Module</strong> is first warmed up with data from the <strong>GameData Platform</strong> using unsupervised LoRA to focus on movement rather than visuals. Subsequently, precise frame-level control is achieved through targeted training. With <strong>Swin-DPM</strong> enabling infinite-length generation and <strong>Stream Consistency Models (SCMs)</strong> ensuring real-time speeds, <strong><em>The Matrix</em></strong> delivers groundbreaking video simulations.
       </p>
     </div>
       </div>
     </div>
     <div class="content">
-      <h1>Extend to Generate Infinte-Horizon Wolrd</h3>
+      <h1>Generate Infinte-Horizon <em>The Matrix</em> Wolrd</h3>
         <div class="text">
           <p>Current state-of-the-art DiT-based video generation models (e.g., CogVideo, Open-Sora) are limited to
             producing videos just a few seconds long, making them insufficient for creating
-            an infinite-horizon world. <strong>The Matrix</strong> overcomes this limitation by introducing
+            an infinite-horizon world. <strong><em>The Matrix</em></strong> overcomes this limitation by introducing
             Swin-DPM, which significantly extends the receptive
             field of attention computations while maintaining the same computational cost.
             This innovation enables the generation of high-quality, super-long-duration videos with consistent visuals,
@@ -1103,8 +1107,10 @@ https://templatemo.com/tm-520-highway
 
 
   <div class="intermediate-title-l2">
-    Long Video Gallery (Over 10 minutes videos~ > 9600 frames)
-  </div>>
+    <h3>Long Video Gallery (Over 10 minutes videos~ > 9600 frames)</h3>
+  </div>
+
+
   <div class="video-slider">
     <div class="slide">
       <video preload="none" poster="videos_icon/horizon_1min_img_4.png" onclick="setControls(this)">
@@ -1158,11 +1164,13 @@ https://templatemo.com/tm-520-highway
 
   </div>
 
-
-  <div class="intermediate-title-l2">
-    Generate Infinite Matrix World
-    <div class="intermediate-context">
-      The proposed Long-Short-Time Morphing Denoising Probability Model (LSTM-DPM) can be
+  <div class="code-rain-container no-image">
+    <canvas></canvas>
+    <div class="content">
+      <h3> Generate Infinite Real World</h3>
+      <div class="text">
+        <p>
+          The proposed Swin-DPM can be
       integrated into general DiT architecture diffusion models to enable extended-duration video
       generation. This innovation represents a significant contribution to the broader field of
       video generation, providing a pathway for creating high-quality, long-form videos
@@ -1171,8 +1179,13 @@ https://templatemo.com/tm-520-highway
       generation. This innovation represents a significant contribution to the broader field of 
       video generation, providing a pathway for creating high-quality, long-form videos 
       that maintain coherence and visual consistency over time.
-    </div>
+        </p>
+
+      </div>
+
   </div>
+  </div>
+  
 
   <div class="tiling-video-wrapper">
 
