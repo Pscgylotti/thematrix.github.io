@@ -882,7 +882,13 @@ https://templatemo.com/tm-520-highway
     <div class="content">
       <h3>The Interactive Module</h3>
       <p>
-        We employ the Interactive Module to realize frame-level precise control.
+        The <strong>Interactive Module</strong> consists of an Embedding block and a cross-attention layer, translating keyboard inputs into natural language commands for video generation. For example, pressing <code>W</code> becomes “The car is driving forward” in <em>Forza Horizon 5</em> or “The man is moving forward and looking up” in <em>Cyberpunk 2077</em> when combined with upward mouse movement. For unlabeled data, a default description, “The camera is moving in an unknown way,” is applied.
+      </p>
+      <p>
+        To enhance robustness, during training, we randomly replace labeled keyboard inputs with the default sentence with a probability q = 0.1.
+      </p>
+      <p>
+        Before training, the base DiT model is warmed up using game and real-world data, fine-tuning a LoRA weight. This ensures the Interactive Module focuses on learning interactions and movement patterns, rather than simply fitting the video.
       </p>
     </div>
   </div>
@@ -891,7 +897,13 @@ https://templatemo.com/tm-520-highway
     <div class="content">
       <h3>The Swin-Denoise Process Model</h3>
       <p>
-        We employ the Interactive Module to realize frame-level precise control.
+        Traditional DiT models generate only short videos due to high computational costs and memory demands of attention mechanisms over extended durations. To overcome this, we propose the <strong>Shift-Window Denoise Process Models</strong> (<strong>Swin-DPM</strong>), leveraging a sliding temporal window to handle dependencies effectively and enable long or infinite video generation.
+      </p>
+      <p>
+        As shown in the right <strong>Figure</strong>, the Swin-DPM processes video tokens in a queue using denoising steps. Tokens are cached after denoising, maintaining continuity between windows. This fine-tuned model builds on pre-trained DiT, where the first window of tokens is used for warmup, and loss is computed only on subsequent tokens.
+      </p>
+      <p>
+        At inference, warmup tokens are discarded, and video generation begins from the (w+1)-th token, enabling efficient and continuous video generation.
       </p>
     </div>
   </div>
@@ -900,7 +912,8 @@ https://templatemo.com/tm-520-highway
     <div class="content">
       <h3>Training Process</h3>
       <p>
-        We employ the Interactive Module to realize frame-level precise control.
+        The training process of <strong>The Matrix</strong> begins with a pretrained video DiT backbone. The <strong>Interactive Module</strong> is first warmed up with data from the <strong>GameData Platform</strong> using unsupervised LoRA to focus on movement rather than visuals. Subsequently, precise frame-level control is achieved through targeted training. With <strong>Swin-DPM</strong> enabling infinite-length generation and <strong>Stream Consistency Models (SCMs)</strong> ensuring real-time speeds, <strong>The Matrix</strong> delivers groundbreaking video simulations.
+      </p>
       </p>
     </div>
   </div>
@@ -914,7 +927,7 @@ https://templatemo.com/tm-520-highway
     <p>Current state-of-the-art DiT-based video generation models (e.g., CogVideo, Open-Sora) are limited to 
       producing videos just a few seconds long, making them insufficient for creating 
       an infinite-horizon world. <strong>The Matrix</strong> overcomes this limitation by introducing 
-      Long-Short-Term Memory Denoising Probability Models (LSTM-DPM), which significantly extends the receptive
+      Swin-DPM, which significantly extends the receptive
        field of attention computations while maintaining the same computational cost. 
        This innovation enables the generation of high-quality, super-long-duration videos with consistent visuals, 
        all within an achievable compute budget.</p>
@@ -1085,7 +1098,7 @@ https://templatemo.com/tm-520-highway
   <div class="intermediate-title-l2">
     Generate Infinite Matrix World
     <div class="intermediate-context">
-      The proposed Long-Short-Time Morphing Denoising Probability Model (LSTM-DPM) can be 
+      The proposed Swin-DPM can be 
       integrated into general DiT architecture diffusion models to enable extended-duration video 
       generation. This innovation represents a significant contribution to the broader field of 
       video generation, providing a pathway for creating high-quality, long-form videos 
