@@ -406,3 +406,16 @@ ul-small {
   text-align: left;
 }
 
+.auto-size-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.half-size-image {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
