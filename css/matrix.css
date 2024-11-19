@@ -314,3 +314,36 @@ tbody .highlight {
     max-width: 100%;
   }
 }
+
+
+
+
+/* 通用文字样式 */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #D0D0D0; /* 浅灰色 */
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+  color: #FFFF80; /* 浅黄色 */
+  font-weight: 600;
+}
+
+/* 强调文字 */
+strong {
+  color: #FFA500; /* 橙色 */
+  font-weight: bold;
+}
+
+/* 链接样式 */
+a {
+  color: #80D8FF; /* 浅蓝色 */
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #FFFFFF; /* 悬停时为白色 */
+}
